@@ -1,0 +1,37 @@
+<html lang="zh-CN">
+
+<head>
+	<title>打字机JS</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
+</head>
+
+<body>
+	<div id="asklz"><span class="typewriter-wrapper"><span id="Bb1XzzjuGH"
+				class="typewriter-char typewriter-item-0">其</span></span><span class="typewriter-cursor"
+			style="opacity: 0.65;">|</span></div>
+	<script>
+		var app = document.getElementById('asklz');
+		var typewriter = new Typewriter(asklz, {
+			loop: true
+		});
+		typewriter.typeString('打字机 JS 示例')
+			.pauseFor(2500)
+			.deleteAll()
+			.typeString('该说些什么呢？')
+			.pauseFor(2500)
+			.typeString('让我好好想想..')
+			.deleteAll()
+			.typeString('有了！')
+			.pauseFor(2500)
+			.deleteAll()
+			.typeString('其实，我挺帅的')
+			.pauseFor(2500)
+			.deleteChars(3)
+			.typeString('很谦虚!')
+			.start();
+	</script>
+
+
+</body>
+
+</html>
