@@ -1,0 +1,30 @@
+body {
+    background-color: #1B1B1B;
+    color: white;
+}
+html{
+	font-family: "Microsoft Yahei", Tahoma;
+}
+.text_s:hover {
+    background-color: #222222;
+    size: 1000px;
+}
+
+.main {
+    background-color: #252525;
+    
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+nav ul li{
+	padding: 10px 0 0px 10px;
+	display: block;
+}
+nav ul li li{
+	padding-left: 20px;
+}
+/* #252525 */
