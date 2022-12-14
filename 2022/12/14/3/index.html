@@ -218,7 +218,10 @@
     <a href="/2022/12/14/article/" rel="prev" title="标题">
       <i class="fa fa-chevron-left"></i> 标题
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2022/12/14/hello-world/" rel="next" title="Hello World">
+      Hello World <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -309,6 +312,14 @@
       </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/tianqiyuan520" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tianqiyuan520" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/401957195" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;401957195" rel="noopener" target="_blank"><i class="fab fa-bilibili fa-fw"></i>Bilibili</a>
+      </span>
+  </div>
 
 
 
@@ -406,7 +417,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       admin       : ['tianqiyuan520'],
       id          : 'be30270c2a0cd80d1c7cf8edcc2de005',
         language: 'zh-CN',
-      distractionFreeMode: true
+      distractionFreeMode: false
     });
     gitalk.render('gitalk-container');
   }, window.Gitalk);
