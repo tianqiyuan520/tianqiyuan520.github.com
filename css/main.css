@@ -1193,7 +1193,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #c75d30;
+  background: #ff3079;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2610,4 +2610,33 @@ mjx-container + br {
   background-repeat: no-repeat;
   height: 1rem;
   width: 1rem;
+}
+/*哔哩哔哩视频适配*/
+.bilibili {
+  position: relative;
+  width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .bilibili {
+    height: 15em;
+    max-width: 25em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .bilibili {
+    height: 20em;
+    max-width: 30em;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .bilibili {
+    height: 30em;
+    max-width: 40em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .bilibili {
+    height: 40em;
+    max-width: 50em;
+  }
 }
