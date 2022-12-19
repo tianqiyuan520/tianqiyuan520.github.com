@@ -159,6 +159,66 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://tianqiyuan520.github.io/2022/12/19/3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="tianqiyuan520">
+      <meta itemprop="description" content="编程 - Minecraft">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="T's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/12/19/3/" class="post-title-link" itemprop="url">进manim群</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-12-19 20:39:50 / 修改时间：21:01:23" itemprop="dateCreated datePublished" datetime="2022-12-19T20:39:50+08:00">2022-12-19</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="题目一"><a href="#题目一" class="headerlink" title="题目一"></a>题目一</h2><p>源码：<a target="_blank" rel="noopener" href="https://github.com/tianqiyuan520/tianqiyuan520.github.io/blob/my_storage/temp/%E8%BF%9Bmanim%E7%BE%A4/join.py">GitHub</a>.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##题目一(调用以前做好的 简陋版数组运算)</span></span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"><span class="keyword">import</span> 大数计算类_除法 <span class="keyword">as</span> dcal</span><br><span class="line">data_list = []</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>,<span class="number">10000</span>):</span><br><span class="line">data = ((dcal._dev([<span class="number">1</span>],dcal.transform(i**<span class="number">2</span>),<span class="number">1</span>)))[<span class="number">0</span>]</span><br><span class="line">data[<span class="number">0</span>] = <span class="string">&#x27;.&#x27;</span></span><br><span class="line">data.insert(<span class="number">0</span>,<span class="number">0</span>)</span><br><span class="line"><span class="built_in">print</span>(i,data)</span><br><span class="line">data_list.append(data)</span><br><span class="line"></span><br><span class="line">b = [<span class="number">1</span>,<span class="string">&#x27;.&#x27;</span>,<span class="number">0</span>]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(data_list)):</span><br><span class="line">b = dcal.add2(b,data_list[i])</span><br><span class="line">result = <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> b:</span><br><span class="line">result += <span class="built_in">str</span>(i)</span><br><span class="line"><span class="built_in">print</span>(b)</span><br><span class="line"><span class="built_in">print</span>((math.pi**<span class="number">2</span>)/<span class="number">6</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">##运行结果</span></span><br><span class="line"><span class="comment">#9999 [0, &#x27;.&#x27;, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0]</span></span><br><span class="line"><span class="comment">#近似 [1, &#x27;.&#x27;, 6, 4, 4, 8, 3, 4, 0, 6, 1, 8, 4, 8, 0, 5, 4, 7, 9, 0, 0]</span></span><br><span class="line"><span class="comment">#精准 1.6449340668482264</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="题目二"><a href="#题目二" class="headerlink" title="题目二"></a>题目二</h2><p>源码：<a target="_blank" rel="noopener" href="https://github.com/tianqiyuan520/tianqiyuan520.github.io/blob/my_storage/temp/%E8%BF%9Bmanim%E7%BE%A4/join.py">GitHub</a>.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> math</span><br><span class="line"><span class="comment">##题一</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">题二</span>():</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>) -&gt; <span class="literal">None</span>:</span><br><span class="line">        self.time = <span class="number">500</span></span><br><span class="line">        self.num = <span class="number">0</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__call__</span>(<span class="params">self,n</span>):</span><br><span class="line">        self.a(n)</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">a</span>(<span class="params">self,n:<span class="built_in">int</span></span>)-&gt;<span class="built_in">float</span>:</span><br><span class="line">        <span class="keyword">if</span> self.time &gt;= <span class="number">0</span>:</span><br><span class="line">            self.time -=<span class="number">1</span></span><br><span class="line">            self.num += <span class="number">1</span></span><br><span class="line">            <span class="keyword">return</span> math.sqrt(<span class="number">1</span>+self.num*(self.a(n)))</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> math.sqrt(n)</span><br><span class="line">answer2 = 题二()</span><br><span class="line"><span class="built_in">print</span>(answer2.a(<span class="number">114514</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment">##运行结果为 2.0</span></span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://tianqiyuan520.github.io/2022/12/14/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -173,7 +233,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/12/14/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+            <a href="/2022/12/14/hello-world/" class="post-title-link" itemprop="url">Hellow,world</a>
         </h2>
 
         <div class="post-meta">
@@ -182,163 +242,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-12-14 21:25:57 / 修改时间：21:26:50" itemprop="dateCreated datePublished" datetime="2022-12-14T21:25:57+08:00">2022-12-14</time>
+              <time title="创建时间：2022-12-14 21:25:57" itemprop="dateCreated datePublished" datetime="2022-12-14T21:25:57+08:00">2022-12-14</time>
             </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2022/12/14/hello-world/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/12/14/hello-world/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://tianqiyuan520.github.io/2022/12/14/3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="tianqiyuan520">
-      <meta itemprop="description" content="编程 - Minecraft">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="T's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/12/14/3/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-12-19 20:57:52" itemprop="dateModified" datetime="2022-12-19T20:57:52+08:00">2022-12-19</time>
               </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-12-14 14:36:23 / 修改时间：14:51:01" itemprop="dateCreated datePublished" datetime="2022-12-14T14:36:23+08:00">2022-12-14</time>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2022/12/14/3/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/12/14/3/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://tianqiyuan520.github.io/2022/12/14/article/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="tianqiyuan520">
-      <meta itemprop="description" content="编程 - Minecraft">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="T's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/12/14/article/" class="post-title-link" itemprop="url">标题</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-12-14 12:31:42 / 修改时间：20:32:14" itemprop="dateCreated datePublished" datetime="2022-12-14T12:31:42+08:00">2022-12-14</time>
-            </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -354,20 +267,6 @@
             </span>
 
           
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2022/12/14/article/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/12/14/article/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
 
         </div>
       </header>
@@ -378,10 +277,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>aaaa<br>$f(x) = 2x$<br>
+          <h2 id="你好-´▽｀-ノノ"><a href="#你好-´▽｀-ノノ" class="headerlink" title="你好(*´▽｀)ノノ"></a>你好(*´▽｀)ノノ</h2><p>这是我第一次尝试个人博客,有不足之处,还望诸位谅解与指导.<br><a target="_blank" rel="noopener" href="https://github.com/tianqiyuan520/tianqiyuan520.github.io">GitHub</a>.<br><a target="_blank" rel="noopener" href="https://space.bilibili.com/401957195">Bilibili</a><br>$\sqrt{-\int_{0}^{+∞}{t*ℯ ^{-t}dt}}$ love you<br>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2022/12/14/article/#more" rel="contents">
+              <a class="btn" href="/2022/12/14/hello-world/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -467,7 +366,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -480,7 +379,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -631,35 +530,6 @@
     
 
   
-
-
-<script>
-NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
-    var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item => {
-      return GUEST.includes(item);
-    });
-    new Valine({
-      el         : '#valine-comments',
-      verify     : false,
-      notify     : false,
-      appId      : 'N2EXaNJD3LbZQxC26qJ1vYOE-gzGzoHsz',
-      appKey     : 'I2IsvZ14bF6bw8n1BwP3qluW',
-      placeholder: "说点什么",
-      avatar     : 'mm',
-      meta       : guest,
-      pageSize   : '10' || 10,
-      visitor    : false,
-      lang       : 'zh-cn' || 'zh-cn',
-      path       : location.pathname,
-      recordIP   : true,
-      serverURLs : ''
-    });
-  }, window.Valine);
-});
-</script>
 
 </body>
 </html>
